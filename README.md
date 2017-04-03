@@ -1,2 +1,2 @@
-# 30DaysCoding
-30 DAYS OF CODING FOR INTERVIEWZ
+# 30DayCoding
+This is my warm-up stuff
