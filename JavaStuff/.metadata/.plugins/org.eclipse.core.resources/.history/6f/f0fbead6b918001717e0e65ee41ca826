@@ -1,0 +1,13 @@
+package server;
+/**
+ * 
+ * There where that server code gonna go
+ * @author j
+ *
+ */
+public abstract class server {
+	private int portNumber;
+	public server(int portN) {
+		portNumer = portN;
+	}
+}

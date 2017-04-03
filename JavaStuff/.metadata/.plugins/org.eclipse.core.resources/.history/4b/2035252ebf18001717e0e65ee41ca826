@@ -1,0 +1,33 @@
+package server;
+
+import java.net.ServerSocket;
+/**
+ * 
+ * There where that server code gonna go
+ * @author j
+ *
+ */
+public abstract class Server {
+	private int portNumber;
+	ServerSocket serverSocket;
+	public Server(int portN) {
+		portNumber = portN;
+		serverSocket = null;
+		
+	}
+	 
+	boolean serverStart() {
+		try {
+			//Don't allow for 0 server socket santize in main
+
+			if (serverSocket == null)
+			serverSocket = new ServerSocket(portNumber);
+			
+		}
+		return true;
+		
+	}
+	
+	
+	
+}

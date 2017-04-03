@@ -1,0 +1,15 @@
+package server;
+
+/**
+ * 
+ * GOnna be a basic ass protocol that will be used heres
+ * @author j
+ *
+ */
+public class BasicServer extends Server {
+	
+	public BasicServer(int portNum) {
+		super(portNum);
+	}
+	
+}

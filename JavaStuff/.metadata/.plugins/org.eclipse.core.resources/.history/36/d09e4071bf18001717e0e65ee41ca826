@@ -1,0 +1,7 @@
+package server;
+
+public class Main {
+	public static void Main(int argc, String  argv[]) {
+			System.out.println("Test:);
+	}
+}

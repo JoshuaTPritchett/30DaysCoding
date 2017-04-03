@@ -1,0 +1,7 @@
+package server;
+
+public class BasicServer extends Server {
+	public BasicServer() {
+		super();
+	}
+}

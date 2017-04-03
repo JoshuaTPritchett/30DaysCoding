@@ -1,0 +1,9 @@
+package server;
+
+public class ServerMain {
+	public static void main(String  []argv) {
+		Server basic = new BasicServer(8080);
+		if (basic.serverStart())
+			System.out.println("System start successful");
+	}
+}
