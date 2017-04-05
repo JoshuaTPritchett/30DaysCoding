@@ -6,7 +6,7 @@
 
 def b_search_recursion(ar, low, high, key):
     #basic implementation of middle point
-    #mid = low + (high-low)/2
+    #mid = low + high/2
     #can lead to arithmetic overflow for large arrays
     #then value of L+R may exceed range
     mid = low + (high-low) / 2; #takes the floor
