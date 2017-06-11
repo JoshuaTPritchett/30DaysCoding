@@ -1,0 +1,30 @@
+GCC = gcc
+FLAGS = -g -Wall -O0
+HEADER = calc.h
+OBJS = stack.o getop.o getch.o rpn.o
+
+all: $(OBJS) 
+	$(GCC) $(FLAGS) $(OBJS) -o rpn 
+
+rpn.o: $(HEADER)
+	$(GCC) -c $(FLAGS) rpn.c
+
+stack.o: $(HEADER)
+	$(GCC) -c $(FLAGS) stack.c
+
+getop.o: $(HEADER)
+	$(GCC) -c $(FLAGS) getop.c
+
+getch.o: $(HEADER)
+	$(GCC) -c $(FLAGS) getch.c
+
+
+
+# PHONY target names
+# these will never need to be created
+# and will prevent conflicts if there is a
+# file with the same name that is created
+
+
+clean:
+	rm $(OBJS) rpn

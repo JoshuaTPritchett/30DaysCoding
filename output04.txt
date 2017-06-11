@@ -1,0 +1,43 @@
+7542539201
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <limits.h>
+void fill_array_zeros(long long int *a, long long int size);
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    long long int elements = 0, operations = 0;
+    scanf ("%lld %lld", &elements, &operations);
+   
+    long long int arr[elements];
+    /* INIT the array with zeros */
+    fill_array_zeros(arr, elements);
+    long long int i, a, b, num, highest = 0;
+    for (i = 0; i < operations; i++) {
+        scanf("%lld %lld %lld", &a, &b, &num);
+        printf("%lld , %lld, %lld\r\n", a, b, num);
+        while (a <= b) {
+            arr[a] += num;
+            if (arr[a] > highest) {
+                highest = arr[a];
+                printf("highest replaced: %lld, index: %lld, num: %lld \r\n", highest, a, num);
+            }
+            a++;
+        }
+    }
+    printf("%lld\n", highest);
+    return 0;
+}
+
+
+void fill_array_zeros(long long int *a, long long int size) {
+    long long int i;
+    printf("sIZE %lld \r\n", size);
+    for (i = 0; i < size; i++)
+        *(a + i) = 0;
+}

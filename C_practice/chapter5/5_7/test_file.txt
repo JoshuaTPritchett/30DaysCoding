@@ -1,0 +1,5 @@
+hello
+goodbye
+NONONO
+A
+B
